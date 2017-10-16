@@ -5,9 +5,8 @@ var app = express();
 
 
 app.get("/", function (req, res) {
-	// curl -u admin@chipbuk:Krokodil962 https://online.moysklad.ru/api/remap/1.1/report/stock/all
-	const user = "admin@chipbuk";
-	const pass = "Krokodil962";
+	const user = "user";
+	const pass = "pass";
 	const hostApi = "online.moysklad.ru/api/remap/1.1/";
 	const service = "report/stock/bystore?offset=0&limit=5";
 
@@ -44,8 +43,7 @@ app.get("/", function (req, res) {
 						
 						stock3Name:                       el.stockByStore[3].name,
 						stock3Id:     /\/([\w-]*)$/g.exec(el.stockByStore[3].meta.href)[1],
-						stock3Value:                      el.stockByStore[3].stock,
-						
+						stock3Value:                      el.stockByStore[3].stock
 					};
 				});
 				res.json(a);
