@@ -8,13 +8,12 @@ app.get("/getMySclad", function (req, res) {
     const user = config.get("user");
     const pass = config.get("pass");
     const uriApi = config.get("uriApi");
-    const service = "report/stock/bystore?offset=0&limit=5";
+    const service = "report/stock/bystore?offset=0&limit=10";
     const uri = "https://" + user + ":" + pass + "@" + uriApi + service;
 
     fetch(uri)
         .then((data)=> data.json())
         .then((json)=> res.json(json));
-
 
     // request({
     //         uri: uri,
