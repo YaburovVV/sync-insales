@@ -2,7 +2,7 @@
   "name": "sync-insales",
   "version": "1.0.0",
   "description": "Синхронизация Insales и Мой склад",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,14 +10,10 @@
   "author": "Yaburov",
   "license": "ISC",
   "dependencies": {
-    "babel-preset-env": "^1.6.1",
     "config": "^1.26.2",
     "express": "^4.16.2",
     "node-fetch": "^1.7.3",
     "request": "^2.83.0"
   },
-  "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-es2015": "^6.24.1"
-  }
+  "devDependencies": {}
 }
