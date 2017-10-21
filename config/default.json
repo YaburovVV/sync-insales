@@ -1,5 +1,6 @@
 {
   "user": "user",
   "pass": "pass",
-  "uriApi": "online.moysklad.ru/api/remap/1.1/"
+  "uriApi": "online.moysklad.ru/api/remap/1.1/",
+  "port": 3000
 }
